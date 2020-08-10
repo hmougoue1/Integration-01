@@ -1,10 +1,56 @@
-*,*:after,*:before{
+
+html,body{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+body{
+   font-size: 16px;
+   color: #ffffff;
+} 
+
+.slides{
+   display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end:0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+.slide{}
+
+.content,.slides,.slide,.background{
+   width: 100%;
+   height: 100%;
+}
+
+.gradiant{}
+
+
+.content .slides .slide{
+   padding: 64px;
+   border: 1px solid red;
+}
+.content .slides .slide .background{
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index : 0
+}
+
+.content .slides .slide .background .image{
+   width: 100%;
+   height : 100%;
+   background-image: url("../images/Corona@2x.png");
+   background-size: cover;
    
 }
-body{}
-.content{}
-ul.slides{}
-li.slides{}
-div.background{}
-div.gradiant{}
-div.image{}
+
+h1.title, p.caption, button.call_to_action{
+   z-index: 1;
+   position: relative;
+}
+
